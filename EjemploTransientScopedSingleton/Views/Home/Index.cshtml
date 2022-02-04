@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+
+    var t1 = (ViewBag.t1).Id;
+    var t2 = (ViewBag.t2).Id;
+
+
+    var s1 = (ViewBag.s1).Id;
+    var s2 = (ViewBag.s2).Id;
+
+
+
+    var s1s = (ViewBag.s1s).Id;
+    var s2s = (ViewBag.s2s).Id;
+
+}
+
+<div class="text-center">
+
+    <h1>Transient</h1>
+    @t1
+    <br />
+    @t2
+
+    <h1>Scoped</h1>
+    <br />
+    @s1
+    <br />
+    @s2
+
+    <h1>Singleton</h1>
+    <br />
+    @s1s
+    <br />
+    @s2s
+
+
+</div>
